@@ -1,0 +1,3 @@
+# LangChainでPDFを入力する
+
+OpenAIのAPIやgeminiのAPIなどにLangChainからpdfを入力する際のサンプル実装

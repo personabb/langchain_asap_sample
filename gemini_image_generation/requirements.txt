@@ -1,0 +1,7 @@
+langchain
+langchain_core
+langchain-openai
+dotenv
+langchain_google_genai
+langchain_community
+pillow
