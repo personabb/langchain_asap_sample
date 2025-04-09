@@ -11,7 +11,7 @@
         "command": "npx",
         "args": ["-y", "@notionhq/notion-mcp-server"],
         "env": {
-          "OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer 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\", \"Notion-Version\": \"2022-06-28\" }"
+          "OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer ntn_xxxxxxxxxxxx\", \"Notion-Version\": \"2022-06-28\" }"
         }
       }
     }
