@@ -167,8 +167,6 @@ Your task is image editing. Based on the image provided by the user, generate a 
                 }
             ]
         ),
-        #AIMessage(content="承知いたしました。画像編集をいたしました。"),
-        #HumanMessage(content="画像が出力されていません。"),
     ]
 
     # messageからプロンプトを作成
@@ -183,8 +181,6 @@ Your task is image editing. Based on the image provided by the user, generate a 
 
 
     # ========== 読み込む画像のパス ==========
-    #file_path = "inputs/sample1.png"
-    #file_path = "inputs/sample2.png"
     file_path = "inputs/images3.png"
 
 
