@@ -172,5 +172,13 @@ arxiv/
 *.jpg
 *.jpeg
 *.gif
+*.txt
 sample.txt
-playwrite_mcp_langchain/
+mcp_config.json
+!mcp_config_example.json
+!console_output-playwrite.txt
+!requirements.txt
+.venv/
+arXiv/
+playwrite_mcp_langchain_r2/
+auth.json
