@@ -7,8 +7,7 @@ from PIL import Image
 import sys
 
 import google.auth
-#from langchain_google_genai import ChatGoogleGenerativeAI, Modality
-#from langchain_core.runnables import RunnableLambda
+
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, AIMessagePromptTemplate
 from langchain_core.messages import HumanMessage, SystemMessage, BaseMessage, AIMessage
 from langchain_google_vertexai import ChatVertexAI, Modality
@@ -155,14 +154,13 @@ def main():
 
 
     # ==========　一度に生成する生成枚数の指定 ==========
-    # RPMは10なのでそれを考慮して設定してください
     generate_images = 1
 
 
 
     # ========== 生成内容の指定 ==========
-    #query = "家のPCデスクの実写画像を作成してください。机の上にはノートPCとコーヒーカップを置いてください。机の色は黒色でお願いします。そのほかは一般的な部屋の様子でいい感じに作ってください。"
-    query = "家のPCデスクの実写画像"
+    query = "家のPCデスクの実写画像を作成してください。机の上にはノートPCとコーヒーカップを置いてください。机の色は黒色でお願いします。そのほかは一般的な部屋の様子でいい感じに作ってください。"
+    #query = "家のPCデスクの実写画像"
 
 
     # =================================

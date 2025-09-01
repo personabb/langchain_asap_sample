@@ -129,7 +129,6 @@ def main():
     MODEL_ID = "gemini-2.5-flash-image-preview"
 
     # ==========　一度に生成する生成枚数の指定 ==========
-    # RPMは10なのでそれを考慮して設定してください
     generate_images = 1
 
     # ========== 生成内容の指定 ==========

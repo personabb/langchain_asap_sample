@@ -6,10 +6,6 @@ from dotenv import load_dotenv, find_dotenv
 from PIL import Image
 import sys
 
-#from langchain_google_genai import ChatGoogleGenerativeAI, Modality
-#from langchain_core.runnables import RunnableLambda
-#from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, MessagesPlaceholder, SystemMessagePromptTemplate
-#from langchain_core.messages import HumanMessage, SystemMessage, BaseMessage, AIMessage
 import google.auth
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from langchain_core.messages import HumanMessage, SystemMessage, BaseMessage, AIMessage
@@ -196,8 +192,8 @@ def main():
     #query = "空を夕焼けの空に変更して、ベンチの色を赤色に変更して"
     #query = "コーヒーカップを消去して"
     #query = "画像に写っている女の子を元にした漫画を作成してください。4コマ漫画で、楽しそうに友達と遊んでいるところがいいです。"
-    #query = "3dフィギュアにしてください。ただしポーズをもっとかっこいい女の子のポーズにしてください。"
-    query = "asapというアカウントのキャラクターなので、カッコよくasapというロゴを入れてください。おしゃれかつ違和感のないようにお願いします。"
+    query = "3dフィギュアにしてください。ただしポーズをもっとかっこいい女の子のポーズにしてください。"
+    #query = "asapというアカウントのキャラクターなので、カッコよくasapというロゴを入れてください。おしゃれかつ違和感のないようにお願いします。"
 
 
     # =================================
