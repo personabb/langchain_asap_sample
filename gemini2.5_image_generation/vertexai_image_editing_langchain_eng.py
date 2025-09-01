@@ -141,16 +141,18 @@ def main():
     # messageを作成する
     message = [
         SystemMessage(content= """
-# 目的
-あなたのタスクは画像編集です。ユーザが入力した画像を元に、ユーザが指定した内容で新しい画像を生成してください。
+# Purpose
 
-# ルール
-ユーザが指示した内容に関係のない物体は、元の画像と全く同一にしてください。
-ユーザが指示した内容だけをユーザの指示に忠実に編集して、画像を生成してください。
-ユーザからの指示が変更依頼の場合は、そのオブジェクトと指定されたオブジェクトを元の画像から入れ替える形で編集してください。
-ユーザからの指示が消去依頼の場合は、そのオブジェクトを元の画像から消去してください。
-ユーザからの指示が追加依頼の場合は、そのオブジェクトを元の画像に追加してください。
-    """),
+Your task is image editing. Based on the image provided by the user, generate a new image according to the user’s instructions.
+
+# Rules
+
+* Objects unrelated to the user’s instructions must remain completely identical to the original image.
+* Edit only the elements specified by the user, and follow the instructions faithfully.
+* If the user requests a **replacement**, replace the specified object in the original image with the new one.
+* If the user requests a **removal**, erase the specified object from the original image.
+* If the user requests an **addition**, add the specified object to the original image.
+"""),
         HumanMessagePromptTemplate.from_template(
             [
                 {
@@ -187,13 +189,8 @@ def main():
 
 
     # ========== 編集内容の指定 ==========
-    #query = "女性の表情を溢れるくらいの笑顔に変更して"
-    #query = "表情を笑顔に変更して"
-    #query = "空を夕焼けの空に変更して、ベンチの色を赤色に変更して"
-    #query = "コーヒーカップを消去して"
-    #query = "画像に写っている女の子を元にした漫画を作成してください。4コマ漫画で、楽しそうに友達と遊んでいるところがいいです。"
-    query = "3dフィギュアにしてください。ただしポーズをもっとかっこいい女の子のポーズにしてください。"
-    #query = "asapというアカウントのキャラクターなので、カッコよくasapというロゴを入れてください。おしゃれかつ違和感のないようにお願いします。"
+    #query = "Turn it into a 3D figure. However, make the pose a cooler, more stylish girl’s pose."
+    query = "Since this is a character from the 'asap' account, please add a cool 'asap' logo. Make sure it looks stylish and blends in naturally without feeling out of place."
 
 
     # =================================

@@ -91,7 +91,7 @@ def validate_and_extract_base64(response):
     if not hasattr(response, 'candidates'):
         raise ValueError("responseにcandidates属性が存在しません。")
 
-    print(f"response: {response}")
+    #print(f"response: {response}")
     
     # candidatesが存在し、要素があるか確認
     if not response.candidates or len(response.candidates) == 0:
