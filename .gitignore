@@ -182,3 +182,6 @@ mcp_config.json
 arXiv/
 playwrite_mcp_langchain_r2/
 auth.json
+!gemini2.5_image_generation/inputs/images3.png
+!gemini2.5_image_generation/outputs/images3_2025-08-31_17-55-24.png
+!images3_2025-08-31_17-56-20.png

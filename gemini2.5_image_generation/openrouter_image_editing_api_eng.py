@@ -239,7 +239,7 @@ Your task is image editing. Based on the image provided by the user, generate a 
     # ========== 編集内容の指定 ==========
     #query = "Turn it into a 3D figure. However, make the pose a cooler, more stylish girl's pose."
     #query = "Since this is a character from the 'asap' account, please add a cool 'asap' logo. Make sure it looks stylish and blends in naturally without feeling out of place."
-    query = "Create a 4-panel manga comic strip featuring the girl from the image, showing her playing happily with friends"
+    query = "Create a 4-panel color manga comic strip featuring the girl from the image, showing her playing happily with friends"
 
     # =================================
 
